@@ -7,7 +7,7 @@ class Owl < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-arm64"
-      sha256 "50da4b7c99f1e9e4661ac2f909a172da2494d1e57f345961064ed3bf319c22ae"
+      sha256 "9264369f022d9728d98046ec9aeecdc2578350b7fd3681661f163a38bec8c1f1"
 
       def install
         bin.install "owl-darwin-arm64" => "owl"
@@ -24,12 +24,8 @@ class Owl < Formula
            mkdir -p ~/.openowl
            echo "owl-xxxx-xxxx-xxxx" > ~/.openowl/license.key
 
-      Then add to Claude Code (~/.claude/settings.json):
-        {
-          "mcpServers": {
-            "owl": { "command": "owl" }
-          }
-        }
+      Then register with Claude Code:
+        claude mcp add owl --transport stdio -s user -- owl
 
       Free tier: 100 tool calls/day. Upgrade for unlimited.
 
