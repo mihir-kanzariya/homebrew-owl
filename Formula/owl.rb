@@ -1,16 +1,27 @@
 class Owl < Formula
   desc "AI desktop automation MCP server — give your AI eyes and hands"
   homepage "https://license-portal-bay.vercel.app"
-  url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-arm64"
-  sha256 "f10d14ea974ec95fa4311bfabb6feeca3cb010ed639c205d520709abe7f296f2"
   version "0.3.0"
   license :cannot_represent
 
-  depends_on :macos
-  depends_on arch: :arm64
+  on_macos do
+    on_arm do
+      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-arm64"
+      sha256 "f10d14ea974ec95fa4311bfabb6feeca3cb010ed639c205d520709abe7f296f2"
 
-  def install
-    bin.install "owl-darwin-arm64" => "owl"
+      def install
+        bin.install "owl-darwin-arm64" => "owl"
+      end
+    end
+
+    on_intel do
+      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-x64"
+      sha256 "0873d162c8e193da5f31aa7213a854a74424c6acae8fbe28fb3dc48d7620851e"
+
+      def install
+        bin.install "owl-darwin-x64" => "owl"
+      end
+    end
   end
 
   def caveats
