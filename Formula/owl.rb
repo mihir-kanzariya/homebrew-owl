@@ -6,20 +6,22 @@ class Owl < Formula
 
   on_macos do
     on_arm do
-      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-arm64"
-      sha256 "f10d14ea974ec95fa4311bfabb6feeca3cb010ed639c205d520709abe7f296f2"
+      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-arm64.tar.gz"
+      sha256 "88e343954a0ed04edc2cf5656cfcc231e9b962b90acbf837b35f77140ce506b0"
 
       def install
-        bin.install "owl-darwin-arm64" => "owl"
+        libexec.install Dir["*"]
+        bin.install_symlink libexec/"owl-darwin-arm64" => "owl"
       end
     end
 
     on_intel do
-      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-x64"
-      sha256 "0873d162c8e193da5f31aa7213a854a74424c6acae8fbe28fb3dc48d7620851e"
+      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-x64.tar.gz"
+      sha256 "f7e44c48f4e85d868181a3d8646c43bdef19aeb6d2d5c3c676d19d268a1233b2"
 
       def install
-        bin.install "owl-darwin-x64" => "owl"
+        libexec.install Dir["*"]
+        bin.install_symlink libexec/"owl-darwin-x86_64.bin" => "owl"
       end
     end
   end
