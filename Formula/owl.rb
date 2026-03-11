@@ -1,12 +1,12 @@
 class Owl < Formula
   desc "AI desktop automation MCP server — give your AI eyes and hands"
   homepage "https://license-portal-bay.vercel.app"
-  version "0.3.0"
+  version "0.3.1"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-arm64.tar.gz"
+      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.1/owl-darwin-arm64.tar.gz"
       sha256 "a1a9813ba5e8e161a9d59c6746e4c7b736f2387b355fcd5049445cc55ac8880c"
 
       def install
@@ -16,7 +16,7 @@ class Owl < Formula
     end
 
     on_intel do
-      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-x64.tar.gz"
+      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.1/owl-darwin-x64.tar.gz"
       sha256 "fec3dd31ce031732514108f0d155b80722429410e06626aedd7f7ea734cc1bab"
 
       def install
