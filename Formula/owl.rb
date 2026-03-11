@@ -7,7 +7,7 @@ class Owl < Formula
   on_macos do
     on_arm do
       url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-arm64.tar.gz"
-      sha256 "c7d6ceee4451ea7784b2c9a797a6f94ad2fbbe094bd4839a9155076d8af34e24"
+      sha256 "61247d3463b4b4af918d4641ff4cfde1ba2c5ee71376e8dcca2c737fec1c1c14"
 
       def install
         bin.install "owl-darwin-arm64" => "owl"
@@ -16,7 +16,7 @@ class Owl < Formula
 
     on_intel do
       url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-x64.tar.gz"
-      sha256 "5c41ee3e96c034ddcf1abc57de1a3a24a342ca991e189d424765ed86e4268fcc"
+      sha256 "2e25f3175544309c629cdad0e2791fcb737d039200fb41323ed21e6b1fe5e4a7"
 
       def install
         bin.install "owl-darwin-x86_64" => "owl"
