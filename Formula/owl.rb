@@ -1,25 +1,23 @@
 class Owl < Formula
   desc "AI desktop automation MCP server — give your AI eyes and hands"
   homepage "https://license-portal-bay.vercel.app"
+  url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-arm64"
+  sha256 "f10d14ea974ec95fa4311bfabb6feeca3cb010ed639c205d520709abe7f296f2"
   version "0.3.0"
   license :cannot_represent
 
-  on_macos do
-    if Hardware::CPU.arm?
-      url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-arm64"
-      sha256 "f10d14ea974ec95fa4311bfabb6feeca3cb010ed639c205d520709abe7f296f2"
+  depends_on :macos
+  depends_on arch: :arm64
 
-      def install
-        bin.install "owl-darwin-arm64" => "owl"
-      end
-    end
+  def install
+    bin.install "owl-darwin-arm64" => "owl"
   end
 
   def caveats
     <<~EOS
       To use OpenOwl, you need a license key:
-        1. Sign up at https://license-portal-bay.vercel.app
-        2. Generate a key in Dashboard → Licenses
+        1. Sign up at https://license-portal-bay.vercel.app/quick-setup
+        2. Your key is generated automatically on signup
         3. Save it:
            mkdir -p ~/.openowl
            echo "owl-xxxx-xxxx-xxxx" > ~/.openowl/license.key
