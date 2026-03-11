@@ -7,7 +7,7 @@ class Owl < Formula
   on_macos do
     on_arm do
       url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.1/owl-darwin-arm64.tar.gz"
-      sha256 "83c189f2ff23c925f98519efce38b57d53e771aed19bc707b3e2dcecf2fcb5ec"
+      sha256 "079d30d3527e8305b9eed0c1216b41e53960fe3e28fd0ed94406ccb1f96a1b1c"
 
       def install
         libexec.install Dir["*"]
@@ -28,12 +28,12 @@ class Owl < Formula
 
   def caveats
     <<~EOS
-      To use OpenOwl, you need a license key:
+      To use OpenOwl, you need an API key:
         1. Sign up at https://openowl-portal.vercel.app/quick-setup
         2. Your key is generated automatically on signup
         3. Save it:
            mkdir -p ~/.openowl
-           echo "owl-xxxx-xxxx-xxxx" > ~/.openowl/license.key
+           echo "owl-xxxx-xxxx-xxxx" > ~/.openowl/api.key
 
       Then register with Claude Code:
         claude mcp add owl --transport stdio -s user -- owl
