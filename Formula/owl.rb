@@ -7,7 +7,7 @@ class Owl < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.0/owl-darwin-arm64"
-      sha256 "aa072a9f913997276d58654318e2790f3b28b86fbcd204755da7c6dcb2919122"
+      sha256 "5fbca7ce3fb498568bcc1fdd522d8c17efa05ba0ab695d585b5429523b828107"
 
       def install
         bin.install "owl-darwin-arm64" => "owl"
