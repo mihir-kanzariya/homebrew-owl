@@ -7,7 +7,7 @@ class Owl < Formula
   on_macos do
     on_arm do
       url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.1/owl-darwin-arm64.tar.gz"
-      sha256 "079d30d3527e8305b9eed0c1216b41e53960fe3e28fd0ed94406ccb1f96a1b1c"
+      sha256 "1a065c129647bb75d3c2f4a09980830009e4fcea0a6ab7140d862393b9006392"
 
       def install
         libexec.install Dir["*"]
@@ -17,7 +17,7 @@ class Owl < Formula
 
     on_intel do
       url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.1/owl-darwin-x64.tar.gz"
-      sha256 "1adea6335e5c671b624d709682daf9e21bafbf626cae8c0212532cc83a3b1064"
+      sha256 ""
 
       def install
         libexec.install Dir["*"]
@@ -32,8 +32,8 @@ class Owl < Formula
         1. Sign up at https://openowl-portal.vercel.app/quick-setup
         2. Your key is generated automatically on signup
         3. Save it:
-           mkdir -p ~/.openowl
-           echo "owl-xxxx-xxxx-xxxx" > ~/.openowl/api.key
+ mkdir -p ~/.openowl
+ echo "owl-xxxx-xxxx-xxxx" > ~/.openowl/api.key
 
       Then register with Claude Code:
         claude mcp add owl --transport stdio -s user -- owl
