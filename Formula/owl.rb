@@ -7,7 +7,7 @@ class Owl < Formula
   on_macos do
     on_arm do
       url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.1/owl-darwin-arm64.tar.gz"
-      sha256 "32aefc4ca0baee2c93bfcb58ee3a872829047f39d812362ae124c3e449912b9b"
+      sha256 "99fa782c6ade3cda62ab70574450209432fa681c4cf99807d9e5a66b6f13f401"
 
       def install
         libexec.install Dir["*"]
@@ -17,7 +17,7 @@ class Owl < Formula
 
     on_intel do
       url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.1/owl-darwin-x64.tar.gz"
-      sha256 "685c59bff0fb5f3a3eb60f26a5e3b6a5ea83b1bec468689db7013ec3d778340d"
+      sha256 "7926bf35ca74ec3821affcfac330367ff18a52d1f58867d6a31932d7cdcece7e"
 
       def install
         libexec.install Dir["*"]
