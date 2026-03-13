@@ -1,13 +1,13 @@
 class Owl < Formula
   desc "AI desktop automation MCP server — give your AI eyes and hands"
-  homepage "https://openowl-portal.vercel.app"
+  homepage "https://openowl.dev"
   version "0.3.3"
   license :cannot_represent
 
   on_macos do
     on_arm do
       url "https://dedjlsvrwafhyznaazbm.supabase.co/storage/v1/object/public/releases/v0.3.3/owl-darwin-arm64.tar.gz"
-      sha256 "eceec3befaf1abea765fee1d3c8f8f4d38d7f0b15c8395ce3c5d48548733b623"
+      sha256 "c3ad9c582f6957e9a83715b868fb08aedb9b6050a0458e5506c9c4111f9e2d6d"
 
       def install
         libexec.install Dir["*"]
@@ -29,7 +29,7 @@ class Owl < Formula
   def caveats
     <<~EOS
       To use OpenOwl, you need an API key:
-        1. Sign up at https://openowl-portal.vercel.app/quick-setup
+        1. Sign up at https://openowl.dev/quick-setup
         2. Your key is generated automatically on signup
         3. Save it:
  mkdir -p ~/.openowl
