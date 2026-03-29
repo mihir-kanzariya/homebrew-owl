@@ -1,13 +1,13 @@
 class Owl < Formula
   desc "AI desktop automation MCP server — give your AI eyes and hands"
   homepage "https://openowl.dev"
-  version "0.3.15"
+  version "0.3.17"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.15/owl-darwin-arm64.tar.gz"
-      sha256 "16980531fa5bb7333e32e4b5900a7a85d8f8fa1a842e7e7fbacd71db5d255530"
+      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.17/owl-darwin-arm64.tar.gz"
+      sha256 "c4dd46d262cf737d428663db1d5580f1d19984f8935564f2506c53f6f88846b9"
 
       def install
         libexec.install Dir["*"]
@@ -16,8 +16,8 @@ class Owl < Formula
     end
 
     on_intel do
-      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.15/owl-darwin-x64.tar.gz"
-      sha256 "50b111be80696eccf753215d3159d058b68d3198774eaf96e2c52c6865ae25c1"
+      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.17/owl-darwin-x64.tar.gz"
+      sha256 "c65997fb2d3cdf551a6a6f226ee61621e0e80e86efabec623ae0b430979b3347"
 
       def install
         libexec.install Dir["*"]
@@ -32,8 +32,8 @@ class Owl < Formula
         1. Sign up at https://openowl.dev/quick-setup
         2. Your key is generated automatically on signup
         3. Save it:
- mkdir -p ~/.openowl
- echo "owl-xxxx-xxxx-xxxx" > ~/.openowl/api.key
+           mkdir -p ~/.openowl
+           echo "owl-xxxx-xxxx-xxxx" > ~/.openowl/api.key
 
       Then register with Claude Code:
         claude mcp add owl --transport stdio -s user -- owl
