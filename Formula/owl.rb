@@ -1,13 +1,13 @@
 class Owl < Formula
   desc "AI desktop automation MCP server — give your AI eyes and hands"
   homepage "https://openowl.dev"
-  version "0.3.20"
+  version "0.3.21"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.20/owl-darwin-arm64.tar.gz"
-      sha256 "58a2e890af20bf3ea9f4a54b0864a01404244cf49eb1f8347e947e15fc8f27cd"
+      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.21/owl-darwin-arm64.tar.gz"
+      sha256 "47c2aab381796ab4cb698c0c84dc23cb0ef2d37df7cd45db3f67ff59121e8c7e"
 
       def install
         libexec.install Dir["*"]
@@ -16,8 +16,8 @@ class Owl < Formula
     end
 
     on_intel do
-      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.20/owl-darwin-x64.tar.gz"
-      sha256 "31b75acbc894420c43c9773551461250bdb876415eccfd56ec29251b50ec78da"
+      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.21/owl-darwin-x64.tar.gz"
+      sha256 "c91cb3f574a0291a23b70216edfe43b0489ffc5a143bda906d2bf5403ff1009b"
 
       def install
         libexec.install Dir["*"]
