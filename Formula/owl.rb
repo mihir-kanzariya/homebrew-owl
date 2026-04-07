@@ -1,13 +1,13 @@
 class Owl < Formula
   desc "AI desktop automation MCP server — give your AI eyes and hands"
   homepage "https://openowl.dev"
-  version "0.3.19"
+  version "0.3.20"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.19/owl-darwin-arm64.tar.gz"
-      sha256 "8f0370a6981fe068aa0e3d186735c101a135ee10e335de47bf25af96fac20cfe"
+      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.20/owl-darwin-arm64.tar.gz"
+      sha256 "58a2e890af20bf3ea9f4a54b0864a01404244cf49eb1f8347e947e15fc8f27cd"
 
       def install
         libexec.install Dir["*"]
@@ -16,8 +16,8 @@ class Owl < Formula
     end
 
     on_intel do
-      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.19/owl-darwin-x64.tar.gz"
-      sha256 "f4c3ae4e8cbe29d02526a086e10b79b66b98b988809d118d4d5782e8a89158a9"
+      url "https://github.com/mihir-kanzariya/openowl-releases/releases/download/v0.3.20/owl-darwin-x64.tar.gz"
+      sha256 "31b75acbc894420c43c9773551461250bdb876415eccfd56ec29251b50ec78da"
 
       def install
         libexec.install Dir["*"]
@@ -41,7 +41,7 @@ class Owl < Formula
       Free tier: 50 tool calls/day. Upgrade for unlimited.
 
       macOS will ask for Accessibility and Screen Recording permissions
-      on first use. Grant both in System Settings > Privacy & Security.
+      on first use. Grant both in System Settings → Privacy & Security.
     EOS
   end
 
